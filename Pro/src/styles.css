@@ -1,0 +1,207 @@
+.jumbotron {
+  padding: 3rem 2rem;
+  background-color: var(--bs-light);
+  border-radius: 0.3rem;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.copyright {
+  font-size: x-small;
+}
+
+.navbar-bg {
+  background-color: #83a4c4;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin-top: -25px;
+}
+
+.logo {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin-bottom: -8px;
+  margin-left: -40px;
+}
+
+.logohome {
+  margin-bottom: -8px;
+  margin-top: -3px;
+  margin-left: -20px;
+}
+
+body.sb-main-padded.sb-show-main {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar {
+  padding-left: 10px;
+}
+
+.nav-link,
+.navbar-nav {
+  color: white !important;
+}
+
+.navbar-link,
+.navbar-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-toggle.nav-link {
+  margin-right: 50px;
+  margin-left: 10px;
+}
+.a.dropdown-item {
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.container {
+  columns: 2 auto;
+}
+
+.view:hover {
+  background-color: #83a4c4;
+}
+.view {
+  padding: 5px 5px;
+}
+
+.iconview {
+  margin-right: 5px;
+}
+
+/* .iconview {
+  margin-left: 5px;
+} */
+
+.btn-container {
+  columns: 1 auto;
+}
+
+/* td {
+  vertical-align: middle !important;
+} */
+
+.td.col {
+  margin-left: 50px;
+}
+
+/*BIDTYPES*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  font-size: 15px;
+}
+
+.delete,
+.period,
+.retry,
+.import {
+  width: 150px;
+  font-size: 15px;
+}
+
+.stripe {
+  background-color: #eceff3;
+}
+
+div.grid-container hr {
+  width: 100%;
+}
+
+.color {
+  background-color: lightyellow;
+}
+
+/* PILOT */
+/* 
+.card {
+  max-width: 20rem;
+
+  display: grid;
+  grid-template-columns: 90px 65%;
+  font-size: 13.5px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  height: auto;
+} */
+
+.card {
+  max-width: 320px;
+  max-height: auto;
+}
+
+.photo {
+  width: 70%;
+  height: auto;
+  /* margin-left: 15px; */
+  margin-top: 25px;
+}
+
+.pilotTag,
+.pilotName,
+.compName {
+  font-weight: 700;
+}
+
+.pilotName {
+  font-size: 16px;
+}
+
+.compName {
+  font-size: 14px;
+}
+
+.mapIcon {
+  font-size: 11.5px;
+}
+
+.address {
+  margin-top: -5px;
+}
+
+.compAdd,
+.phoneNum {
+  margin-top: -10px;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  /* max-width: 320px;
+  max-height: auto; */
+  /* max-width: 90%; */
+  /* height: auto; */
+}
+
+.breadcrumb-item > a {
+  color: lightslategrey;
+}
+
+.active {
+  font-weight: 700;
+}
+
+.card-bg {
+  background-color: #eef2f5;
+  width: 100%;
+}
+
+.aapilots {
+  background-color: #eef2f5;
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 85%;
+  padding-right: 20px;
+}
