@@ -1,0 +1,186 @@
+.jumbotron {
+  padding: 3rem 2rem;
+  background-color: var(--bs-light);
+  border-radius: 0.3rem;
+  max-width: 85%;
+  margin: 0 auto;
+}
+
+/*Navbar  */
+.navbar-bg {
+  background-color: #83a4c4;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin-top: -20px;
+}
+
+.logo {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin-bottom: -8px;
+  margin-left: -30px;
+}
+
+.logohome {
+  margin-bottom: -8px;
+  margin-top: -3px;
+  margin-left: -10px;
+}
+
+body.sb-main-padded.sb-show-main {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar {
+  padding-left: 10px;
+}
+
+.nav-link,
+.navbar-nav {
+  color: white !important;
+}
+
+.navbar-link,
+.navbar-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-toggle.nav-link {
+  margin-right: 50px;
+  margin-left: 10px;
+}
+.a.dropdown-item {
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+/*AirlineView   */
+.container {
+  columns: 2 auto;
+}
+
+a.view.btn {
+  padding: 5px;
+}
+
+a.view:hover {
+  background-color: #83a4c4;
+}
+.view {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.iconview {
+  margin-right: 5px;
+}
+
+.btn-container {
+  columns: 1 auto;
+}
+
+.td.col {
+  margin-left: 50px;
+}
+
+/*BIDTYPES*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  font-size: 15px;
+}
+
+.delete,
+.period,
+.retry,
+.import {
+  width: 155px;
+  font-size: 15px;
+}
+
+.stripe {
+  background-color: #eceff3;
+}
+
+div.grid-container hr {
+  width: 100%;
+}
+
+.color {
+  background-color: lightyellow;
+}
+
+/* PILOT */
+
+.card {
+  max-width: 320px;
+  max-height: auto;
+  margin-right: 20px;
+}
+
+.photo {
+  width: 70%;
+  height: auto;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
+.pilotTag {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.pilotTag,
+.pilotName,
+.compName {
+  font-weight: 700;
+}
+
+.pilotName {
+  font-size: 16px;
+}
+
+.compName {
+  font-size: 14px;
+}
+
+.mapIcon {
+  font-size: 11.5px;
+}
+
+.address {
+  margin-top: -5px;
+}
+
+.compAdd,
+.phoneNum {
+  margin-top: -10px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #eef2f5;
+  padding-top: 20px;
+  padding-left: 20px;
+  max-width: 87%;
+  justify-content: space-around;
+  margin-left: 30px;
+}
+
+.breadcrumb-item > a {
+  color: lightslategrey;
+}
+
+.active {
+  font-weight: 700;
+}
