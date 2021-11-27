@@ -1,15 +1,11 @@
 import React from "react";
-import AirlineView from "./AirlineView";
 import { AdministrationView } from "../../components/AdministrationView/AdministrationView";
 import { VersionView } from "../../components/VersionView/VersionView";
-// import HeaderView from "../../components/HeaderView/HeaderView";
-// import { AdministrationView } from "../AdministrationView/AdministrationView";
+import { AirlineView } from "../../components/AirlineView/AirlineView";
 
 const HomePage = () => {
   return (
     <>
-      {/* <HeaderView /> */}
-
       <div className="jumbotron">
         <section className="row ">
           <AdministrationView name="Tom Jones!" />
@@ -17,29 +13,29 @@ const HomePage = () => {
         </section>
       </div>
 
-      <div className="row ms-5">
+      <div className="row ms-5 view">
         <div className="col-md-6">
           <AirlineView
-            airlineName="American Airlines"
-            airlineLink="/american-airlines/bidtypes"
+            name="American Airlines"
+            path="/american-airlines/bidtypes"
           />
         </div>
         <div className="col-md-6">
           <AirlineView
-            airlineName="Alaska Airlines"
-            airlineLink="/alaska-airlines/bidtypes"
+            name="Alaska Airlines"
+            path="/alaska-airlines/bidtypes"
           />
         </div>
       </div>
-      <div className="row ms-5">
+      <div className="row ms-5 view">
         <div className="col-md-6">
           <AirlineView
-            airlineName="JetSuite"
-            airlineLink="/jetsuite/bidtypes"
+            name="Frontier Airlines"
+            path="/frontier-airlines/bidtypes"
           />
         </div>
         <div className="col-md-6">
-          <AirlineView airlineName="UPS" airlineLink="/ups/bidtypes" />
+          <AirlineView name="UPS" path="/ups/bidtypes" />
         </div>
       </div>
     </>

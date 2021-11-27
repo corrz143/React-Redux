@@ -10,12 +10,12 @@ import { NavBarDropDownView } from "../NavBarDropDownView/NavBarDropDownView";
 export function NavBarView({ airlines }) {
   return (
     <>
-      <Navbar className="navbar navbar-bg navbar-dark py-3" expand="lg">
+      <Navbar className="navbar navbar-bg navbar-dark py-3 " expand="lg">
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="navbar-collapse">
           <Nav>
             {airlines.map((airline, index) => (
-              <NavBarDropDownView key={index} airline={airline} />
+              <NavBarDropDownView key={index} {...airline} />
             ))}
           </Nav>
         </Navbar.Collapse>
@@ -25,26 +25,11 @@ export function NavBarView({ airlines }) {
 }
 
 NavBarDropDownView.propTypes = {
-  dropDowns: PropTypes.arrayOf(
-    PropTypes.shape({
-      airlineName: PropTypes.string,
-      bidTypesPath: PropTypes.string,
-      pilotsPath: PropTypes.string,
-    })
-  ),
+  airlines: PropTypes.arrayOf({
+    airlineName: PropTypes.string,
+    bidTypesPath: PropTypes.string,
+    pilotsPath: PropTypes.string,
+  }),
 };
 
-// export const NavBarView = ({ dropDowns }) => {
-//   return (
-//     <div
-//       className="collapse navbar-collapse bg-primary"
-//       id="navbarSupporedContent"
-//     >
-//       <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
-//         {dropDowns.map((args, index) => {
-//           return <NavBarDropDownView key={index} {...args} />;
-//         })}
-//       </ul>
-//     </div>
-//   );
-// };
+export default NavBarView;

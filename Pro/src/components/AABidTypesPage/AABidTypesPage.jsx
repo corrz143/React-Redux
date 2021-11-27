@@ -43,10 +43,9 @@ export function AABidTypesPage({ bidTypesList }) {
         <tbody>
           <tr>
             <td>
-              {bidTypesList &&
-                bidTypesList.map((bidType, index) => (
-                  <BidTypeListView key={index} {...bidType} />
-                ))}
+              {bidTypesList.map((bidType, index) => (
+                <BidTypeListView key={index} {...bidType} />
+              ))}
             </td>
           </tr>
         </tbody>

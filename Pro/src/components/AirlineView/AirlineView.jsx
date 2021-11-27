@@ -7,7 +7,7 @@ import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
  * Interactive components that displays the airline section
  */
 
-export function AirlineView({ view: { name, path } }) {
+export function AirlineView({ name, path }) {
   return (
     <div className="col-sm-12 col-md ">
       <div className="p-3">
@@ -29,8 +29,8 @@ export function AirlineView({ view: { name, path } }) {
 }
 
 AirlineView.propTypes = {
-  view: PropTypes.shape({
-    name: PropTypes.string,
-    path: PropTypes.string,
-  }),
+  name: PropTypes.string,
+  path: PropTypes.string,
 };
+
+export default AirlineView;

@@ -1,8 +1,6 @@
 import React from "react";
 import { AAPilotsPage } from "./AAPilotsPage";
-// import * as BidList from "../BidTypeListView/BidTypeListView.stories";
-// import { BidTypeListView } from "../BidTypeListView/BidTypeListView";
-// import * as Pilots from "../PilotsListView/PilotsListView.stories";
+
 export default {
   title: "Structural Components/AAPilotsPage",
   component: AAPilotsPage,

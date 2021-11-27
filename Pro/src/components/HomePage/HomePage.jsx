@@ -3,19 +3,14 @@ import PropTypes from "prop-types";
 import { Navbar, Nav } from "react-bootstrap";
 import { NavBarDropDownView } from "../NavBarDropDownView/NavBarDropDownView";
 import { AirlineView } from "../AirlineView/AirlineView";
+import { AdministrationView } from "../AdministrationView/AdministrationView";
+import { VersionView } from "../VersionView/VersionView";
 
 /**
  * View components that displays the homepage
  */
 
-export function HomePage({
-  logoView,
-  navbarView,
-  administrationView,
-  versionView,
-  airlineView,
-  footerView,
-}) {
+export function HomePage({ logoView, navbarView, airlineView, footerView }) {
   return (
     <>
       <Navbar className="navbar-bg navbar-dark px-4 py-2" expand="lg">
@@ -29,10 +24,9 @@ export function HomePage({
           id="basic-navbar-nav"
         >
           <Nav className="navbar-nav">
-            {/* {console.log(navbarView)} */}
             {navbarView &&
               navbarView.map((airline, index) => (
-                <NavBarDropDownView key={index} airline={airline} />
+                <NavBarDropDownView key={index} {...airline} />
               ))}
           </Nav>
         </Navbar.Collapse>
@@ -41,10 +35,9 @@ export function HomePage({
       <div>
         <div className="jumbotron">
           <section className="row">
-            {administrationView}
-            {/* {console.log(administrationView)} */}
-            {versionView}
-            {/* {console.log(versionView)} */}
+            <AdministrationView name="Tom Jones!" />
+
+            <VersionView current="1.1.0" />
           </section>
         </div>
       </div>
@@ -53,7 +46,7 @@ export function HomePage({
         <section>
           <div className="">
             {airlineView.map((view, index) => (
-              <AirlineView key={index} view={view} />
+              <AirlineView key={index} {...view} />
             ))}
           </div>
         </section>

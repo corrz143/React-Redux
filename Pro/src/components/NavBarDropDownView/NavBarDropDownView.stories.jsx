@@ -19,11 +19,9 @@ const Template = (args) => <NavBarDropDownView {...args} />;
 
 export const AirlineAndPath = Template.bind({});
 AirlineAndPath.args = {
-  airline: {
-    airlineName: "American Airlines",
-    bidTypesPath: "/american-airlines/bidtypes",
-    pilotsPath: "/american-airlines/pilots",
-  },
+  airlineName: "American Airlines",
+  bidTypesPath: "/american-airlines/bidtypes",
+  pilotsPath: "/american-airlines/pilots",
 };
 
 // const Template = (args) => <NavBarDropDownView {...args} />;

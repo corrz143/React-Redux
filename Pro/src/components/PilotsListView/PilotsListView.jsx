@@ -9,14 +9,13 @@ import { PilotView } from "../PilotView/PilotView";
 
 export function PilotsListView({ pilots }) {
   return (
-    // <div className="">
-    <div className="card-list">
-      {/* <div className=""> */}
-      {pilots.map((pilot, id) => (
-        <PilotView key={id} {...pilot} />
-      ))}
+    <div className="">
+      <div className="card-list row">
+        {pilots.map((pilot, id) => (
+          <PilotView key={id} {...pilot} />
+        ))}
+      </div>
     </div>
-    // </div>
   );
 }
 

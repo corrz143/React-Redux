@@ -57,28 +57,3 @@ PilotsInfo.args = {
     },
   ],
 };
-
-// export const PilotMichael = Template.bind({});
-// PilotMichael.args = {
-//   ...PilotJohn.args,
-//   id: "4",
-//   photo: "/images/michael-zimber.jpeg",
-//   pilotTag: "FO 737 GEG",
-//   pilotName: "Michael Zimber",
-// };
-
-// export const PilotSandra = Template.bind({});
-// PilotSandra.args = {
-//   ...PilotMichael.args,
-//   id: "5",
-//   photo: "/images/sandra-smith.jpeg",
-//   pilotName: "Sandra Smith",
-// };
-
-// export const PilotJanet = Template.bind({});
-// PilotJanet.args = {
-//   ...PilotMichael.args,
-//   id: "5",
-//   photo: "/images/janet-carton.jpeg",
-//   pilotName: "Janet Carton",
-// };

@@ -1,13 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { PilotsListView } from "../PilotsListView/PilotsListView";
-// import { Link } from "react-router-dom"
 
 export function AAPilotsPage({ aaPilots }) {
   return (
     <>
       <div className="ms-4">
-        <div className="ms-3">
+        <div className="ms-4">
           <h3 className="text-secondary">Pilots</h3>
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb">
@@ -23,7 +22,7 @@ export function AAPilotsPage({ aaPilots }) {
             </ol>
           </nav>
         </div>
-        <div className="aapilots col-sm-12">
+        <div>
           <PilotsListView pilots={aaPilots} />
         </div>
       </div>
