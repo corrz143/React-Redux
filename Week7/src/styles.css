@@ -1,0 +1,122 @@
+.jumbotron {
+  padding: 3rem 2rem;
+  background-color: var(--bs-light);
+  border-radius: 0.3rem;
+  margin-left: 90px;
+  margin-right: 90px;
+}
+
+.copyright {
+  font-size: x-small;
+}
+
+.navbar-bg {
+  background-color: #83a4c4;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin-top: -25px;
+}
+
+.logo {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin-bottom: -8px;
+  margin-left: -40px;
+}
+
+.logohome {
+  margin-bottom: -8px;
+  margin-top: -3px;
+  margin-left: -20px;
+}
+
+body.sb-main-padded.sb-show-main {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar {
+  padding-left: 10px;
+}
+
+.nav-link,
+.navbar-nav {
+  color: white !important;
+}
+
+.navbar-link,
+.navbar-link:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-toggle.nav-link {
+  margin-right: 50px;
+  margin-left: 10px;
+}
+.a.dropdown-item {
+  margin: 0 auto;
+}
+
+.text {
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.container {
+  columns: 2 auto;
+}
+
+.view:hover {
+  background-color: #83a4c4;
+}
+.view {
+  padding: 5px 5px;
+}
+
+.iconview {
+  margin-right: 5px;
+}
+
+/* .iconview {
+  margin-left: 5px;
+} */
+
+.btn-container {
+  columns: 1 auto;
+}
+
+/* td {
+  vertical-align: middle !important;
+} */
+
+.td.col {
+  margin-left: 50px;
+}
+
+/*BIDTYPES*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* grid-template-rows: 150px; */
+}
+
+.delete,
+.period,
+.retry,
+.import {
+  width: 160px;
+}
+
+.items:nth-child(1),
+.items:nth-child(3),
+.items:nth-child(5),
+.items:nth-child(7),
+.items:nth-child(9) {
+  background-color: #eceff3;
+}
+
+.color {
+  background-color: lightyellow;
+}
